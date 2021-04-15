@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página de Cadastro</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <form>
+        <h3>Entrar em contato</h3>
+        <input id="nome" type="text" name="Nome" placeholder="Seu nome:">
+        <input id="email" type="text" name="e-mail"  placeholder="Seu e-mail..."/>
+        <input id="password" type="password" name="senha" placeholder="Sua senha..."/>
+        <input type="submit" name="acao" value="Enviar"/>
+    </form>
+    
+    <script>
+        var email = document.getElementById('email');
+        var password = document.getElementById('password');
+        var nome = document.getElementById('nome');
+
+        nome.addEventListener('focus',()=>{
+            nome.style.borderColor = "#4A5F6A";
+        });
+            nome.addEventListener('blur',()=>{
+            nome.style.borderColor = "#ccc"
+    });
+        email.addEventListener('focus',()=>{
+            email.style.borderColor = "#4A5F6A";
+        });
+            email.addEventListener('blur',()=>{
+            email.style.borderColor = "#ccc"
+    });
+    password.addEventListener('focus',()=>{
+            password.style.borderColor = "#4A5F6A";
+        });
+            password.addEventListener('blur',()=>{
+            password.style.borderColor = "#ccc"
+    });
+    </script>
+    </body>
+</html>
